@@ -1,0 +1,91 @@
+/*
+1.设置标签的某些默认样式;
+2.设置input等的全局样式;
+3.定义一些全局css类;
+
+*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, 
+pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+html{
+	color: #222;
+}
+body, button, input, select, textarea {
+    font-family:'Microsoft Yahei','微软雅黑', arial,'Hiragino Sans GB','宋体',宋体,Tahoma,Arial,Helvetica,STHeiti;
+    font-size: 12px;
+}
+em,i{
+	font-style: normal;
+}
+ul ol{
+	list-style: none outside none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0 none;
+}
+textarea {
+    resize: vertical;
+}
+label, button {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.overflow {
+    overflow: hidden;
+}
+.hide {
+    display: none;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.error {
+    color: #f00;
+    font-size: 12px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.clearfix {
+}
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+body {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+ul li,ol li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}

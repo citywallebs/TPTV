@@ -1,0 +1,244 @@
+<!DOCUTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel='icon' href='../img/logo.ico ' type='image/x-ico' /> 
+	<title>天津大学IPTV</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/Main.css">
+	<script type="text/javascript"  src="../js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript"  src="../js/channelTab.js"></script>
+	<script type="text/javascript"  src="../js/height.js"></script>
+	<script type="text/javascript"  src="../js/tvWallShow.js"></script>
+</head>
+<body>
+	<!--用于灯光控制-->
+	<div  class="hideBg" id="hideBg"></div>
+	<div  class="wrapper">
+		<!--header部分-->
+		<div  class="header">
+			<div  class="headerBox">
+				<div  class="logo left">
+					<h1><a href="#">天津大学IPTV</a></h1>
+				</div>
+				<div  class="nav">
+					<ul>
+						<li><a href="javascript:void(0)"  id="navIndex"  class="curNavbg">首&nbsp;&nbsp;页</a></li>
+						<li><a href="javascript:void(0)" id="navTvWall">电视墙</a></li>
+					</ul>
+				</div>
+				<div  class="info">
+					<!-- <span  class="userCount"  id="userCount"></span>
+					<span  class="chatCount"  id="chatCount"></span> -->
+				</div>
+			</div>
+		</div>
+
+		<!--播放器以及频道列表和会话框-->
+		<div  class="main">
+			<div  class="mainBox">
+				<!--播放器-->
+				<div  class="playerBox  left"  id="playerBox">
+					<img src="../images/1.jpg">
+				</div>
+				<!--频道列表-->
+				<div  class="cate">
+					<ul  class="cateNav" id="cateNav">
+						<li  class="curCateNav">央视频道</li>
+						<li>省台卫视</li>
+						<li>其他频道</li>
+					</ul>
+					<div  class="cateBox"  id="cateBox">
+						<div  class="allBox" id="allBox"  style="left:0">
+							<ul class="cateBoxL">
+								<li><a href="#"  class="curChannel">CCTV-1</a></li>
+								<li><a href="#">CCTV-2</a></li>
+								<li><a href="#">CCTV-3</a></li>
+								<li><a href="#">CCTV-4</a></li>
+								<li><a href="#">CCTV-5</a></li>
+								<li><a href="#">CCTV-6</a></li>
+								<li><a href="#">CCTV-7</a></li>
+								<li><a href="#">CCTV-8</a></li>
+								<li><a href="#">CCTV-News</a></li>
+								<li><a href="#">CCTV-10</a></li>
+								<li><a href="#">CCTV-11</a></li>
+								<li><a href="#">CCTV-12</a></li>
+								<li><a href="#">CCTV-新闻</a></li>
+								<li><a href="#">CCTV-少儿</a></li>
+								<li><a href="#">CCTV-音乐</a></li>
+								<li><a href="#">CCTV-戏曲</a></li>
+							</ul>
+
+							<ul class="cateBoxL"  >
+								<li><a href="#">湖南卫视</a></li>
+								<li><a href="#">四川卫视</a></li>
+								<li><a href="#">东方卫视</a></li>
+								<li><a href="#">浙江卫视</a></li>
+								<li><a href="#">山东卫视</a></li>
+								<li><a href="#">天津卫视</a></li>
+								<li><a href="#">广西卫视</a></li>
+								<li><a href="#">广东卫视</a></li>
+								<li><a href="#">深圳卫视</a></li>
+								<li><a href="#">北京卫视</a></li>
+								<li><a href="#">辽宁卫视</a></li>
+								<li><a href="#">江苏卫视</a></li>
+								<li><a href="#">海峡卫视</a></li>
+								<li><a href="#">厦门卫视</a></li>
+								<li><a href="#">南方卫视</a></li>
+								<li><a href="#">星空卫视</a></li>
+								<li><a href="#">宁夏卫视</a></li>
+							</ul>
+							<ul class="cateBoxL" >
+								<li><a href="#">金鹰卡通</a></li>
+								<li><a href="#">炫动卡通</a></li>
+								<li><a href="#">卡酷动画</a></li>
+								<li><a href="#">优慢卡通</a></li>
+								<li><a href="#">国防军事</a></li>
+								<li><a href="#">风云音乐</a></li>
+								<li><a href="#">央视精品</a></li>
+								<li><a href="#">怀旧经典</a></li>
+								<li><a href="#">风云足球</a></li>
+								<li><a href="#">风云剧场</a></li>
+								<li><a href="#">第一剧场</a></li>
+								<li><a href="#">世界地理</a></li>
+								<li><a href="#">汽摩频道</a></li>
+								<li><a href="#">游戏竞技</a></li>
+								<li><a href="#">靓装频道</a></li>
+								<li><a href="#">留学世界</a></li>
+								<li><a href="#">先锋记录</a></li>
+								<li><a href="#">天元围棋</a></li>
+								<li><a href="#">北京国际</a></li>
+								<li><a href="#">东方国际</a></li>
+								<li><a href="#">江苏国际</a></li>
+								<li><a href="#">湖南国际</a></li>
+								<li><a href="#">凤凰资讯</a></li>
+								<li><a href="#">凤凰中文</a></li>
+								<li><a href="#">ChannelV</a></li>
+							</ul>
+							<div  class="clear-fix"></div>
+						</div><!--/-allCateBox END-->
+						
+					</div>
+				</div><!--/END CATE-->
+
+				<div  class="chatBox" id="chatBox" style="top:481px;">
+
+					<div  class="chatHead" id="chatHead">
+						<h2  class="chatTitle">消息盒子</h2>
+						<span  class="onlineCount">[<em id="onlineCount">9999</em>]</span>
+						<span  class="chatCount">[<em id="chatCount">0</em>]</span>
+					</div>
+					<span  class="lightControl" id="lightControl"></span>
+					<div  class="chatMain" id="chatMain">
+						<div  class="chatList">
+							<ul  id="chatList">
+								<li  class="others">
+									<div  class="chatInfo">
+										<span  class="userName">小志</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将分别阿迪飞进口量 阿斯兰将开放大道顺丰呢啊啊思考家里蹲阿迪是凤凰啊睡觉了咖啡哈师大发哈斯蒂芬阿斯蒂芬阿斯蒂芬阿斯顿发的撒发生大黄蜂
+									</div>
+								</li>
+								<li  class="selfs">
+									<div  class="chatInfo">
+										<span  class="userName">我</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将分别阿迪飞进
+									</div>
+								</li>
+								<li  class="others">
+									<div  class="chatInfo">
+										<span  class="userName">小志</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将
+									</div>
+								</li>
+								<li  class="others">
+									<div  class="chatInfo">
+										<span  class="userName">小志</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将
+									</div>
+								</li>
+								<li  class="others">
+									<div  class="chatInfo">
+										<span  class="userName">小志</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将
+									</div>
+								</li>
+							
+								<li  class="selfs">
+									<div  class="chatInfo">
+										<span  class="userName">小志</span>
+										<span  class="addTime">2014/10/01 18:35:24</span>
+									</div>
+									<div  class="chatBubble">
+										鞍山京东方哈迪斯将
+									</div>
+								</li>								
+								
+							</ul>
+							<div class="clear" style="height:20px;width:100%;"></div>			
+						</div><!--/end chatlist-->
+						<div  style="position:absolute;height:15px;width:318px;background:#FFF;bottom:131px;left:0;z-index:9999;"></div>
+
+						<!--会话框输入-->
+						<div  class="chatForm" >
+							<form  id="chatForm" onsubmit="return false">
+								<textarea  value=""  id="chatArea"  class="chatArea">留下你的态度,不过可不能太过哦~~</textarea>
+								<div  class="userEdit">
+									<label  for="username">自定义昵称：</label>
+									<input type="text" value="我是金刚狼" id="username" class="btn txtBtn" />
+									<input type="submit" value="说一句" class="btn subBtn" id="chatSubmit" />
+								</div>
+							</form>
+						</div><!--/end 会话框输入-->
+
+					</div>
+				</div>
+			</div>
+		</div><!--/Main end-->
+
+		<div  class="tvwall" id="tvwall">
+			<div  class="tvwallInner" id="tvwallInner">
+				
+
+			</div>
+		</div>
+
+
+		<div  class="footer">
+			<p>CopyRight &copy; 2008-2014 天津大学 <a  href="#">信息与网络协会</a>  All Rights Reservied</p>
+		</div>
+	</div><!--网页主体内容结束-->
+
+	<!--右边栏弹出导航部分-->
+	<!-- <div  class="popNav">
+		<span  class="popBar"></span>
+	</div> -->
+
+
+	
+
+	<!--电视墙的容器-->
+	<!-- <div  id="tvWall">
+		<div  id="gotoWall">
+			<a href="javascript:showTvWall();" title="打开电视墙">打开电视墙</a>
+			<input  type="hidden" id="hiddenBtn" value="1" />
+		</div>
+		<div  id="tvWallInner"></div>
+	</div> -->
+
+</body>
+</html>

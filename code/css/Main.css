@@ -1,0 +1,622 @@
+/*
+2014.08.10
+iptv主页样式
+*/
+body{
+	overflow-x:hidden;
+}
+.wrapper{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	background: #FFFFFF;
+	height: 50px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	/*border-bottom: 1px solid #E7E7E7;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99998;
+}
+.headerBox{
+	width: 1200px;
+	height: 100%;
+	margin:0 auto;
+	
+}
+.header .logo{
+	float: left;
+	height: 100%;
+	width: 67px;
+	background: url('../img/logo.png') no-repeat left 7px;
+}
+.header .logo h1{
+	/*font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+	padding-left: 27px;	
+	width: 40px;
+	overflow: hidden;
+	text-indent: -9999;	*/
+	display: none;
+}
+.header .logo h1 a{
+	color: #88bad9;
+}
+
+.header .nav{
+	height: 100%;
+	float: left;
+}
+.header .nav li{
+	float: left;
+	margin-left: 5px;
+}
+.header .nav li a{
+	display: block;
+	height: 50px;
+	width: 91px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	color: #222;
+	text-indent: 2px;
+	/*background: #F4F4F4*/
+}
+.header .nav li a:hover{
+	background: #F3F3F3;
+}
+.curNavbg{
+	background: #F4F4F4;
+}
+
+
+/*.header .info{
+	float: right;
+	height: 100%;
+}
+.header .info span{
+	display: inline-block;
+	height: 100%;
+	width: 50px;
+	line-height: 50px;
+}
+.header .info .userCount{
+	background: url('../img/ico.png') no-repeat -17px -33px;
+}
+.header .info .chatCount{
+	background: url('../img/ico.png') no-repeat -17px -113px;
+}*/
+
+/*.header .wallNav{
+	display: block;;
+	float: right;
+	width: 60px;
+	padding-left: 40px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #1d1d1d;
+	background: url('../img/ico.png') no-repeat left -6px;
+}
+.header .onlineCount{
+	display: block;
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	color: #c3c3c3;
+	font-size: 16px;
+	padding:0 10px;
+}*/
+
+
+
+
+
+
+.main{
+	width: 100%;
+	padding:30px 0;
+	background: #F4F4F4;
+	position: relative;
+	margin-top: 50px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.mainBox{
+	width: 1200px;
+	height: 524px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.playerBox{
+	width: 860px;
+	height: 524px;
+	float: left;
+	position: relative;
+	z-index: 99997;	
+}
+.playerBox img{
+	width: 100%;
+	height: 100%;
+}
+.cate{
+	width: 336px;
+	height: 522px;
+	float: right;
+	background: #FFF;
+	border: 1px solid #E7E7E7;
+}
+.cateNav{
+	width: 100%;
+	height: 40px;
+	background: #FAFAF;
+
+}
+.cateNav li{
+	float: left;
+	width: 110px;
+	height: 38px;
+	line-height: 38px;
+	margin-left: 1px;
+	font-size: 14px;
+	border-bottom: 1px solid #E7E7E7;
+	cursor: pointer;
+}
+.curCateNav{
+	background: #E4E4E4;
+}
+.cateBox{
+	width: 332px;
+	height: 484px;
+	position: relative;
+	overflow: hidden;
+}
+.allBox{
+	width: 996px;
+	height: 100%;
+	position: absolute;
+	left:0;
+}
+.cateBoxL{
+	width: 332px;
+	height: 100%;
+	float: left;
+}
+.cateBoxL li{
+	float: left;
+}
+.cateBoxL li a{
+	display: block;
+	height: 36px;
+	width: 99px;
+	text-align: center;
+	line-height: 36px;
+	color: #222;
+	background: #F3F3F3;
+	margin-left: 10px;
+	margin-top:10px;
+	border-radius:2px;
+
+}
+.curChannel{
+	background: #1FAC75!important;
+	color: #FFF!important;
+}
+.cateBoxL li a:hover{
+	background:#A5DEC8 ;
+	color: #FFF;
+}
+
+
+/*聊天盒子*/
+.chatBox{
+	position: absolute;
+	/*right: 0;
+	bottom:0;*/
+	top:481px;
+	right:0;
+	width: 336px;
+	background: #FFF;
+	height: 481px;
+	border: 1px solid #E7E7E7;
+	border-top: 2px solid #1FAC75;
+	
+}
+.chatHead{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background: #FAFAFA;
+	position: relative;
+	cursor:pointer;
+	box-shadow: 0 1px 2px rgba(125,125,125,0.6);
+	z-index: 99995;
+}
+.lightControl{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: #1FAC75 url('../img/ico.png') no-repeat -21px -188px;
+	z-index: 99996;
+}
+.chatTitle{
+	display: block;
+	float: left;
+	width:104px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	font-weight: normal;
+
+}
+.onlineCount,.chatCount{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	margin-left:5px;
+	position: relative;
+	padding-left:25px;
+	text-align: left;
+}
+.onlineCount{
+	background: url('../img/ico.png') no-repeat -29px -38px;
+}
+.chatCount{
+	background: url('../img/ico.png') no-repeat -32px -117px;
+}
+#onlineCount,#chatCount{
+	font-size: 12px;
+	color: #1FAC75;
+}
+.chatList{
+	width: 316px;
+	height: 300px;
+	padding:5px 10px;
+	overflow-y:scroll;
+	border-bottom:1px solid #1FAC75;
+	position: relative;
+}
+#chatList:after{
+	content: '';
+	clear: both;
+}
+.chatList ul li{
+	float: left;
+	width: 90%;
+	text-align: left;
+	color: #DDD;
+	position: relative;
+}
+.chatList .selfs{
+	float: right;
+}
+.chatInfo{
+	height: 30px;
+	line-height: 30px;
+}
+.chatList .selfs .chatInfo{
+	float: right;
+	text-align: right;
+}
+.chatList .selfs .chatInfo .userName{
+	float: right;
+}
+.chatInfo .userName{
+	font-size: 12px;
+	color: #1FAC75;
+	padding:0 5px;
+}
+
+.chatBubble:before,.chatBubble:after{
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0;
+	border-top: 10px solid #fff;
+}
+.chatList .others .chatBubble:before{
+	top:-10px;
+	left:20px;
+	border-left: 10px solid #F4F4F4;
+}
+.chatList .others .chatBubble:after{
+	top:-10px;
+	left:17px;
+	border-right: 3px solid #F4F4F4;
+}
+.chatBubble{
+	padding:5px 10px;
+	background: #F4F4F4;
+	border-radius:4px;
+	margin-top:5px;
+	position: relative;
+	z-index: 1;
+	line-height: 25px;
+	font-size: 12px;
+	color: #222;
+	float: left;
+	clear: both;
+}
+.chatList .selfs .chatBubble{
+	float: right;
+}
+.chatList .selfs .chatBubble:after{
+	top:-10px;
+	right:20px;
+	border-right: 10px solid #F4F4F4;
+}
+.chatList .selfs .chatBubble:before{
+	top:-10px;
+	right:17px;
+	border-left: 3px solid #F4F4F4;
+}
+/*chatForm css style*/
+.chatForm{
+	width:316px;
+	height: 110px;
+	padding:10px;
+	text-align: left;
+}
+.chatForm form{
+	padding:0;
+	margin:0;
+	width:100%;
+	height: 100%;
+}
+.chatArea{
+	width: 100%;
+	height: 70px;
+	width: 302px\0;
+	height: 56px\0;
+	*width: 302px;
+	*height: 56px;
+	padding:5px;
+	border:2px solid #1FAC75;
+	box-shadow: inside 0 1px  2px rgba(125,125,125,0.6);
+	color: #BBB;
+}
+.userEdit{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+}
+.btn{
+	height: 30px;
+	padding:0 5px;
+}
+.txtBtn{
+	height: 28px\0;
+	*height: 28px;
+	border:1px solid #DDD;
+	width: 156px;
+	width: 144px\0;
+	*width: 144px;
+}
+.subBtn{
+	width: 80px;
+	color:#FFF;
+	background: #E4E4E4;
+	border: 1px solid #C9EBDE;
+	cursor: pointer;
+}
+
+
+
+.goto{
+	width: 100%;
+	height: 75px;
+	background: #F4F4F4;
+	margin-bottom: 1px;
+	border-bottom:1px solid #DDD;
+	border-top:1px solid #DDD;
+}
+.gotobar{
+	display: block;
+	width: 200px;
+	margin:0 auto;
+	height: 50px;
+	background: url('../img/ico.png') no-repeat 50% -262px;
+	cursor: pointer;
+}
+
+
+
+
+.footer{
+	height: 40px;
+	background: #fff;
+	width: 100%;
+}
+.footer p{
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.footer a{
+	color: #222;
+}
+
+
+
+
+
+
+
+/*电视墙部分样式*/
+.tvwall{
+	position: relative;
+	width: 100%;
+}
+
+.tvwallInner{
+	background: #F4F4F4;
+	width: 100%;
+}
+
+
+/*tvwall css*/
+.tvwallContainer{
+	width: 1200px;
+	margin:0 auto;
+	text-align: left;
+}
+.sideNav{
+	width:168px;
+	height: 800px;
+	border-right: 1px solid #DDD;
+	float: left;
+	position: relative;
+}
+.line{
+	position: absolute;
+	top:0;
+	left: 5px;
+	height: 800px;
+	width: 0;
+	border-left: 1px dashed #BBB;
+}
+.sideNav ol{
+	margin-left: -10px;
+	margin-top:13px;
+	position: relative;
+}
+.sideNav ol li{
+	height: 40px;
+	line-height: 40px;
+}
+.sideNav ol li em{
+	display: block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	float: left;
+	margin: 15px 10px;
+	line-height: 10px;
+	color: #FFF
+}
+.sideNav ol li span{
+	display: block;
+	margin:5px 0;
+	float: left;
+	width: 100px;
+	height: 30px;
+	background: #1FAC75;
+	color: #FFF;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.sideNav ol li span:before{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 11px;
+	left: -8px;
+	border-bottom: 4px solid #1FAC75;
+	border-left: 8px solid #F4F4F4;
+}
+.sideNav ol li span:after{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 14px;
+	left: -8px;
+	border-top: 8px solid #1FAC75;
+	border-left: 8px solid #F4F4F4;
+}
+.tvList{
+	width: 1030px;
+	float: right;
+	border-left: 1px solid #FFF;
+	padding-bottom: 40px;
+}
+.listDetail{
+	width: 100%;
+}
+.listDetail h3{
+	color: #1FAC75;
+	font-size: 14px;
+	text-indent: 3px;
+	height: 40px;
+	line-height: 40px;
+	margin:10px auto 0 20px;
+}
+.listDetail ul{
+	margin-top: -20px
+}
+.listDetail ul li{
+	float: left;
+	width: 323px;
+	margin-left: 20px;
+	margin-top:40px;
+	background: #eee;
+	height: 242px;
+	background: url('../img/tvwallIco.png') no-repeat left top;
+}
+.listDetail  .channelDetail .channelImg{
+	display: block;
+	width: 293px;
+	height: 212px;
+	margin: 15px auto auto 15px;
+	position: relative;
+}
+.listDetail  .channelDetail .channelImg img{
+	width: 100%;
+	height: 100%;
+}
+.listDetail  .channelDetail .channelName{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 5px;
+	width: 78px;
+	height: 40px;
+	color: #FFF;
+	line-height: 40px;
+	background:url('../img/tvwallIco.png') no-repeat left -324px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hideBg{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter:alpha(opacity=90);  /*支持 IE 浏览器*/
+	-moz-opacity:0.90; /*支持 FireFox 浏览器*/
+	opacity:0.90;  /*支持 Chrome, Opera, Safari 等浏览器*/
+	z-index: 99999;
+}
+
+
